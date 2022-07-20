@@ -33,7 +33,6 @@ public class App {
 
             String urlImagem = filme.get("image");
             String titulo = filme.get("title");
-
             String nomeArquivo = titulo.replace(":", "-") + ".png";
 
             try {
