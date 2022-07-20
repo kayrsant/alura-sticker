@@ -7,14 +7,14 @@
 
 Este projeto foi realizado durante a imersão java da Alura, onde foi implementada uma aplicação java que consome a API IMDB.
 
-## Resultados
+## ✅ Resultados
 
-# Aula 1 
+# 📝 Aula 1 
 <p align="center">
 <img src="https://i.imgur.com/vXEkp6I.png">
 </p>
 
-# Aula 2
+# 📝 Aula 2
 <p align="center">Saída no console:</p>
 <p align="center">
 <img src="https://i.imgur.com/ZOUyKa5.png">
@@ -24,7 +24,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 <img src="https://i.imgur.com/rZxGWz2.png">
 </p>
 
-## Aula 1
+## 📝 Aula 1
 
 <p>Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa!
 </p>
@@ -33,7 +33,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-# Desafios
+# 🎯 Desafios
 
   - [x] Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
   - [x] Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!
@@ -41,7 +41,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [ ] Mudar o JsonParser para usar uma biblioteca de parsing de JSON como Jackson ou GSON
   - [ ] Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 
-## Aula 2
+## 📝 Aula 2
 
 <p>Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!
 </p>
@@ -50,7 +50,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-# Desafios
+# 🎯 Desafios
 
   - [x] Ler a documentação da classe abstrata InputStream.
   - [x] Centralizar o texto na figurinha.
