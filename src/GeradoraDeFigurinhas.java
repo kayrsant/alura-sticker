@@ -31,7 +31,7 @@ public class GeradoraDeFigurinhas {
         graphics.drawImage(imagemOriginal, 0, 0, null);
 
         // configurar fonte
-        Font fonte = new Font(Font.SANS_SERIF, Font.BOLD,  (int)(largura/15));
+        Font fonte = new Font("Impact", Font.BOLD,  (int)(largura/15));
         graphics.setColor(Color.WHITE);
         graphics.setFont(fonte);
         String frase = "THE BEST OF BESTS";

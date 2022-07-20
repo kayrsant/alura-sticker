@@ -21,7 +21,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 </p>
 <p align="center">Imagem gerada:</p>
 <p align="center">
-<img src="https://i.imgur.com/9QU3byT.png">
+<img src="https://i.imgur.com/QgusbyW.png">
 </p>
 
 ## Aula 1
@@ -56,7 +56,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [x] Centralizar o texto na figurinha.
   - [x] Fazer um pacote no Whatsapp e/ou Telegram com as suas próprias figurinhas!
   - [x] Criar diretório de saída das imagens, se ainda não existir.
-  - [ ] Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
+  - [x] Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
   - [ ] Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!
   - [ ] Colocar contorno (outline) no texto da imagem.
   - [ ] Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.
