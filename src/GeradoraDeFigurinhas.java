@@ -4,6 +4,9 @@ import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 import javax.imageio.ImageIO;
 
@@ -24,22 +27,30 @@ public class GeradoraDeFigurinhas {
         BufferedImage novaImagem = new BufferedImage(largura, novaAltura, BufferedImage.TRANSLUCENT);
 
         // copiar a imagem original à nova (em memória)
-
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(imagemOriginal, 0, 0, null);
 
         // configurar fonte
         Font fonte = new Font(Font.SANS_SERIF, Font.BOLD,  (int)(largura/15));
-        graphics.setColor(Color.YELLOW);
+        graphics.setColor(Color.WHITE);
         graphics.setFont(fonte);
-        
+        String frase = "THE BEST OF BESTS";
+        int textWidth = graphics.getFontMetrics().stringWidth(frase);
+        int center = (largura / 2) - (textWidth / 2);
 
         // escrever uma frase na nova imagem
-        graphics.drawString("TOPZERA", (int)(largura/3), novaAltura-110);
+        graphics.drawString(frase, center, novaAltura-100);
 
         // escrever em um arquivo
+        try{
+            String saida = "saida/";
+            Path path = Paths.get(saida);
+            Files.createDirectory(path);
         ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
-
+        }
+        catch(Exception e){
+            ImageIO.write(novaImagem, "png", new File("saida/" + nomeArquivo));
+        }
 
 
     }

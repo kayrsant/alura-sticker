@@ -21,7 +21,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 </p>
 <p align="center">Imagem gerada:</p>
 <p align="center">
-<img src="https://i.imgur.com/W4Yrocr.png">
+<img src="https://i.imgur.com/9QU3byT.png">
 </p>
 
 ## Aula 1
@@ -55,7 +55,7 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [x] Ler a documentação da classe abstrata InputStream.
   - [x] Centralizar o texto na figurinha.
   - [x] Fazer um pacote no Whatsapp e/ou Telegram com as suas próprias figurinhas!
-  - [ ] Criar diretório de saída das imagens, se ainda não existir.
+  - [x] Criar diretório de saída das imagens, se ainda não existir.
   - [ ] Colocar outra fonte como a Comic Sans ou a Impact, a fonte usada em memes.
   - [ ] Colocar uma imagem de você que está fazendo esse curso sorrindo, fazendo joinha!
   - [ ] Colocar contorno (outline) no texto da imagem.
