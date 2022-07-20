@@ -3,6 +3,7 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,6 +20,7 @@ public class GeradoraDeFigurinhas {
         //InputStream inputStream = 
         //            new URL("https://imersao-java-apis.s3.amazonaws.com/TopMovies_1.jpg").openStream();
         BufferedImage imagemOriginal = ImageIO.read(inputStream);
+        BufferedImage joinha = ImageIO.read(new File("entradas/like.png"));
         
         // criar nova imagem em memoria com transparencia e tamanho novo
         int largura = imagemOriginal.getWidth();
@@ -29,6 +31,7 @@ public class GeradoraDeFigurinhas {
         // copiar a imagem original à nova (em memória)
         Graphics2D graphics = (Graphics2D) novaImagem.getGraphics();
         graphics.drawImage(imagemOriginal, 0, 0, null);
+        graphics.drawImage(joinha, -120, novaAltura - 350, null);
 
         // configurar fonte
         Font fonte = new Font("Impact", Font.BOLD,  (int)(largura/15));
@@ -39,6 +42,7 @@ public class GeradoraDeFigurinhas {
         int center = (largura / 2) - (textWidth / 2);
 
         // escrever uma frase na nova imagem
+        
         graphics.drawString(frase, center, novaAltura-100);
 
         // escrever em um arquivo
