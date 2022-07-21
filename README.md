@@ -29,13 +29,17 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 <p align="center">
 <img src="https://i.imgur.com/Ooqyi3l.png">
 </p>
-<p align="center">Nova Saída no Console da NASA:</p>
+<p align="center">Nova Saída no Console do IMDB:</p>
 <p align="center">
 <img src="https://i.imgur.com/92pv60I.png">
 </p>
-<p align="center">Imagem gerada pela API da NASA:</p>
+<p align="center">Nova Saída no Console da NASA:</p>
 <p align="center">
 <img src="https://i.imgur.com/Z44LSRY.png">
+</p>
+<p align="center">Imagem gerada pela API da NASA:</p>
+<p align="center">
+<img src="https://i.imgur.com/57dYoAe.png">
 </p>
 
 ## 📝 Aula 1
