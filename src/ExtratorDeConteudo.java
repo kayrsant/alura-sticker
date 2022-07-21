@@ -1,8 +1,7 @@
 import java.util.List;
 
-public interface ExtratorDeConteudo{
+public interface ExtratorDeConteudo {
 
-    List<Conteudo> extraiConteudos(String json);
+  List < Conteudo > extraiConteudos(String json);
 
-    
 }

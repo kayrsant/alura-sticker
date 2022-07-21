@@ -11,7 +11,6 @@ public class ClienteHttp {
 
 
         try{
-            
         HttpClient client = HttpClient.newHttpClient();
         URI endereco = URI.create(url);
         var request = HttpRequest.newBuilder(endereco).GET().build();

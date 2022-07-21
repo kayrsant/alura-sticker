@@ -4,53 +4,85 @@ import java.util.List;
 import java.util.Scanner;
 
 public class App {
+  public static void main(String[] args) throws Exception {
 
-   public static final String RESET = "\033[0m";
-   public static void main(String[] args) throws Exception {
+    Cores cor = new Cores();
+    String reset = "\u001B[0m";
+    String atencao = "\u26A0\uFE0F ";
+    String cinema = " \uD83D\uDCFD\uFE0F";
+    String foguete = " \uD83D\uDE80";
 
-      System.out.println("E ai, qual a de hoje?");
-      System.out.println("1- Top 250 Filmes\n2- Top 250 Series\n3- Most Popular Movies\n4- Most Popular Series");
-      try (Scanner lerOpcao = new Scanner(System.in)) {
-         Integer opcaoEscolhida = lerOpcao.nextInt();
+    System.out.println(atencao + " Escolha entre as apis: " + atencao);
+    System.out.println((cor.backYellowTextWhiteB.format("1-IMDB" + reset + cinema)));
+    System.out.println((cor.backBlueTextWhiteB.format("2- NASA" + reset + foguete)));
 
-         String url = CreateUrl.setUrl(opcaoEscolhida);
+    try (Scanner lerOpcaoApi = new Scanner(System.in)) {
+      Integer opcaoEscolhida = lerOpcaoApi.nextInt();
+      System.out.println("\u2705 " + cor.backGreenTextBlackB.format("Sucesso!"));
 
-         ClienteHttp http = new ClienteHttp();
-         String json = http.buscaDados(url);
+      if (opcaoEscolhida == 1) {
+        try {
+          String api = "IMDB";
+          String url = CreateUrl.setUrl(api);
+          ClienteHttp http = new ClienteHttp();
+          String json = http.buscaDados(url);
+          ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
+          List < Conteudo > conteudos = extrator.extraiConteudos(json);
+          var geradora = new GeradoraDeFigurinhas();
 
-         ExtratorDeConteudo extrator = new ExtratorDeConteudoDoIMDB();
-         List<Conteudo> conteudos = extrator.extraiConteudos(json);
-        
-         GeradoraDeFigurinhas geradora = new GeradoraDeFigurinhas();
-
-         for (int i = 0; i < conteudos.size(); i++) {
-
+          for (int i = 0; i < conteudos.size(); i++) {
             Conteudo conteudo = conteudos.get(i);
             String nomeArquivo = conteudo.getTitulo().replace(":", " -") + ".png";
-           
 
             try {
-               InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
-               System.out.println("Gerando imagem - [" + conteudo.getTitulo() + "]");
-               geradora.cria(inputStream, nomeArquivo);
+              InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
+              System.out.println("Gerando imagem - [" + conteudo.getTitulo() + "]");
+              geradora.cria(inputStream, nomeArquivo);
             } catch (java.io.FileNotFoundException err) {
-               System.out.println("Imagem não encontrada ou link inválido");
+              System.out.println("Imagem não encontrada ou link inválido");
             }
 
-            System.out.println("\033[0;41m" + "Nome do filme:" + "\033[0;1m " + conteudo.getTitulo() + RESET);
-            /*String notaDoFilme = conteudo.get("imDbRating");
-            System.out.println("\033[44m" + "Nota do filme:" + "\033[0;1m " + notaDoFilme);
+            System.out.println(cor.backCyanTextWhiteB.format("Nome do Filme:") +
+              " " + cor.negrito.format(conteudo.getTitulo()));
+            String notaDoFilme = conteudo.getImDbRating();
             String stars = "";
-            for (int i = 0; i < Math.round(Float.parseFloat(notaDoFilme)); i++) {
-               stars += "\u2B50";
+            for (int contador = 0; contador < Math.round(Float.parseFloat(notaDoFilme)); contador++) {
+              stars += "\u2B50";
             }
-            System.out.println(stars); */
+            System.out.println(cor.backYellowTextWhiteB.format("Classificação:") + " " +
+              stars + " " + cor.backBlueTextWhiteB.format(notaDoFilme));
             System.out.println();
-         }
-      } catch (Exception e) {
-         System.out.println("O numero informado nao esta registrado.");
+            System.out.println("\u2705 " + cor.backGreenTextBlackB.format("Sucesso!"));
+            System.out.println();
+          }
+
+        } catch (Exception e) {
+          System.out.println("Algo inesperado aconteceu.");
+        }
+      } else if (opcaoEscolhida == 2) {
+        String api = "NASA";
+        String url = CreateUrl.setUrl(api);
+        ClienteHttp http = new ClienteHttp();
+        String json = http.buscaDados(url);
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDaNasa();
+        List < Conteudo > conteudosNasa = extrator.extraiConteudos(json);
+        var geradora = new GeradoraDeFigurinhas();
+
+        for (int i = 0; i < conteudosNasa.size(); i++) {
+          Conteudo conteudo = conteudosNasa.get(i);
+          String nomeArquivo = conteudo.getTitulo().replace(":", " -") + ".png";
+
+          try {
+            InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
+            System.out.println(("Gerando imagem - [" + conteudo.getTitulo() + "]"));
+            geradora.cria(inputStream, nomeArquivo);
+            System.out.println("\u2705 " + cor.backGreenTextBlackB.format("Sucesso!"));
+            System.out.println();
+          } catch (java.io.FileNotFoundException err) {
+            System.out.println(cor.backRedTextWhiteB.format("Imagem não encontrada ou link inválido"));
+          }
+        }
       }
-
-   }
-
+    }
+  }
 }

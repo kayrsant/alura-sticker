@@ -24,6 +24,20 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
 <img src="https://i.imgur.com/rZxGWz2.png">
 </p>
 
+# 📝 Aula 3
+<p align="center">Escolha de qual API gerar sticker:</p>
+<p align="center">
+<img src="https://i.imgur.com/Ooqyi3l.png">
+</p>
+<p align="center">Nova Saída no Console da NASA:</p>
+<p align="center">
+<img src="https://i.imgur.com/92pv60I.png">
+</p>
+<p align="center">Imagem gerada pela API da NASA:</p>
+<p align="center">
+<img src="https://i.imgur.com/Z44LSRY.png">
+</p>
+
 ## 📝 Aula 1
 
 <p>Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa!
@@ -62,3 +76,19 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [ ] Tratar as imagens retornadas pela API do IMDB para pegar uma imagem maior ao invés dos thumbnails. Opções: pegar a URL da imagem e remover o trecho mostrado durante a aula ou consumir o endpoint de posters da API do IMDB (mais trabalhoso), tratando o JSON retornado.
   - [ ] Fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
   - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair imagem principal e contorná-la.
+
+## 📝 Aula 3
+
+<p>Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.</p>
+
+<p align="center">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+</p>
+
+# 🎯 Desafios
+
+ - [ ] Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
+ - [ ] Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
+ - [ ] Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
+ - [ ] Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
+ - [ ] Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
