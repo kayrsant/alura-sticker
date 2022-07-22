@@ -49,7 +49,7 @@
 
   <hr>
 
-<h1 id="aula2">📝 Aula 2</h2>
+<h2 id="aula2">📝 Aula 2</h2>
 
 <p id="aula2">Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!</p>
 
