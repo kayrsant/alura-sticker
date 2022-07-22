@@ -8,6 +8,7 @@ public class CreateUrl {
   private static String mostPopularMovies = "MostPopularMovies.json";
   private static String mostPopularSeries = "MostPopularTVs.json";
   private static String urlNasa = "";
+  private static String urlLinguagensApi = "http://localhost:8080/linguagens";
 
   public static String setUrl(String api) {
 
@@ -36,8 +37,11 @@ public class CreateUrl {
         String date = "&start_date=2022-07-18&end_date=2022-07-21";
         urlNasa = "https://api.nasa.gov/planetary/apod?api_key=" + apiKeyNasa + date;
         return urlNasa;
+
+      case "LINGUAGENS":
+      url = "http://localhost:8080/linguagens";
+      return url;
     }
     return null;
-
   }
 }

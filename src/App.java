@@ -82,6 +82,31 @@ public class App {
             System.out.println(cor.backRedTextWhiteB.format("Imagem não encontrada ou link inválido"));
           }
         }
+      } else if(opcaoEscolhida == 3){
+        String api = "LINGUAGENS";
+        String url = CreateUrl.setUrl(api);
+        ClienteHttp http = new ClienteHttp();
+        String json = http.buscaDados(url);
+        ExtratorDeConteudo extrator = new ExtratorDeConteudoDoLinguagensAPI();
+        List<Conteudo> conteudosLinguagens = extrator.extraiConteudos(json);
+        var geradora = new GeradoraDeFigurinhas();
+
+        for(int i = 0; i < conteudosLinguagens.size(); i++){
+          Conteudo conteudo = conteudosLinguagens.get(i);
+          String nomeArquivo = conteudo.getTitulo().replace(":", " -") + ".png";
+          
+        try{
+          InputStream inputStream = new URL(conteudo.getUrlImagem()).openStream();
+          System.out.println();
+          System.out.println(("Gerando imagem - [" + conteudo.getTitulo() + "]"));
+          geradora.cria(inputStream, nomeArquivo);
+          System.out.println("\u2705 " + cor.backGreenTextBlackB.format("Sucesso!"));
+          System.out.println();
+        } catch(Exception e){
+          System.out.println("Algo aconteceu.");
+        }
+        
+        }
       }
     }
   }

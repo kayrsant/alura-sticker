@@ -1,55 +1,43 @@
 <h1 align="center">alura-stickers</h1>
 
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+<img src="https://i.imgur.com/kST9QVa.png">
+</p>
+
+<p align="center">
 <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white">
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-Este projeto foi realizado durante a imersão java da Alura, onde foi implementada uma aplicação java que consome a API IMDB.
+<p align="center">Este projeto foi realizado durante a imersão java da Alura, onde foi implementada uma aplicação java que consome a API IMDB.</p>
+<hr>
 
-## ✅ Resultados
+# 🛠 Tecnologias
 
-# 📝 Aula 1 
-<p align="center">
-<img src="https://i.imgur.com/vXEkp6I.png">
-</p>
+- [Spring](https://spring.io/)
+- [Java](https://www.java.com/pt-BR/)
+- [MongoDB](https://www.mongodb.com/pt-br)
 
-# 📝 Aula 2
-<p align="center">Saída no console:</p>
-<p align="center">
-<img src="https://i.imgur.com/ZOUyKa5.png">
-</p>
-<p align="center">Imagem gerada:</p>
-<p align="center">
-<img src="https://i.imgur.com/rZxGWz2.png">
-</p>
+<hr>
 
-# 📝 Aula 3
-<p align="center">Escolha de qual API gerar sticker:</p>
-<p align="center">
-<img src="https://i.imgur.com/Ooqyi3l.png">
-</p>
-<p align="center">Nova Saída no Console do IMDB:</p>
-<p align="center">
-<img src="https://i.imgur.com/92pv60I.png">
-</p>
-<p align="center">Nova Saída no Console da NASA:</p>
-<p align="center">
-<img src="https://i.imgur.com/Z44LSRY.png">
-</p>
-<p align="center">Imagem gerada pela API da NASA:</p>
-<p align="center">
-<img src="https://i.imgur.com/57dYoAe.png">
-</p>
+
+# 📒 Sumário
+
+ - [Aula 1](https://github.com/kayrsant/alura-sticker#aula1)
+ - [Aula 2](https://github.com/kayrsant/alura-sticker#aula2)
+ - [Aula 3](https://github.com/kayrsant/alura-sticker#aula1)
+ - [Resultados](https://github.com/kayrsant/alura-sticker#resultados)
+
+ <hr>
+
 
 ## 📝 Aula 1
 
-<p>Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa!
+<p id="#aula1">Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa! </p>
+<p align="center">
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-<p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
-</p>
 
 # 🎯 Desafios
 
@@ -59,10 +47,11 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [ ] Mudar o JsonParser para usar uma biblioteca de parsing de JSON como Jackson ou GSON
   - [ ] Desafio supremo: criar alguma maneira para você dar uma avaliação ao filme, puxando de algum arquivo de configuração OU pedindo a avaliação para o usuário digitar no terminal.
 
+  <hr>
+
 ## 📝 Aula 2
 
-<p>Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!
-</p>
+<p id="#aula2">Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!</p>
 
 <p align="center">
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
@@ -81,12 +70,13 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
   - [ ] Fazer com que o texto da figurinha seja personalizado de acordo com as classificações do IMDB.
   - [ ] Desafio supremo: usar alguma biblioteca de manipulação de imagens como OpenCV pra extrair imagem principal e contorná-la.
 
+  <hr>
+
 ## 📝 Aula 3
 
-<p>Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.</p>
-
+<p id="#aula3">Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.</p>
 <p align="center">
-<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
 # 🎯 Desafios
@@ -96,3 +86,37 @@ Este projeto foi realizado durante a imersão java da Alura, onde foi implementa
  - [ ] Usar recursos do Java 8 e posterior, como Streams e Lambdas, para mapear uma lista em uma outra
  - [ ] Criar uma Enum que une, como configurações, a URL da API e o extrator utilizado
  - [ ] Desafio supremo: consumir outras APIs que contém imagens, como a da Marvel, que é bem diferente. Repositório com APIs públicas: clique aqui.
+
+ <h1 align="center" id="resultados">✅ Resultados</h1>
+
+ <h2 align="center">📝 Aula 1</h2>
+ <p align="center">
+   <img src="https://i.imgur.com/vXEkp6I.png">
+ </p>
+ <h2 align="center">📝 Aula 2</h2>
+ <h3 align="center">Saída no console:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/ZOUyKa5.png">
+ </p>
+ </div>
+ <h3 align="center">Imagem gerada:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/rZxGWz2.png">
+ </p>
+ <h2 align="center"> 📝 Aula 3 </h2>
+ <h3 align="center">Escolha de qual API gerar sticker:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/Ooqyi3l.png">
+ </p>
+ <h3 align="center">Nova Saída no Console do IMDB:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/92pv60I.png">
+ </p>
+ <h3 align="center">Nova Saída no Console da NASA:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/Z44LSRY.png">
+ </p>
+ <h3 align="center">Imagem gerada pela API da NASA:</h3>
+ <p align="center">
+   <img src="https://i.imgur.com/57dYoAe.png">
+ </p>
