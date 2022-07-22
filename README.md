@@ -39,7 +39,7 @@
 </p>
 
 
-# 🎯 Desafios
+## 🎯 Desafios
 
   - [x] Consumir o endpoint de filmes mais populares da API do IMDB. Procure também, na documentação da API do IMDB, o endpoint que retorna as melhores séries e o que retorna as séries mais populares.
   - [x] Usar sua criatividade para deixar a saída dos dados mais bonitinha: usar emojis com código UTF-8, mostrar a nota do filme como estrelinhas, decorar o terminal com cores, negrito e itálico usando códigos ANSI, e mais!
@@ -57,7 +57,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-# 🎯 Desafios
+## 🎯 Desafios
 
   - [x] Ler a documentação da classe abstrata InputStream.
   - [x] Centralizar o texto na figurinha.
@@ -79,7 +79,7 @@
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
 
-# 🎯 Desafios
+## 🎯 Desafios
 
  - [ ] Transformar a classe que representa os conteúdos em um Record, disponível a partir do Java 16
  - [ ] Criar as suas próprias exceções e usá-las na classe que implementa o cliente HTTP
