@@ -25,7 +25,7 @@
 
  - [Aula 1](https://github.com/kayrsant/alura-sticker#aula1)
  - [Aula 2](https://github.com/kayrsant/alura-sticker#aula2)
- - [Aula 3](https://github.com/kayrsant/alura-sticker#aula1)
+ - [Aula 3](https://github.com/kayrsant/alura-sticker#aula3)
  - [Resultados](https://github.com/kayrsant/alura-sticker#resultados)
 
  <hr>
