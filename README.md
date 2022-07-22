@@ -123,4 +123,4 @@
 
 
 
- <p align="center">Feito com muito 💙 por <a href="github.com/kayrsant">kayrsant</a></p>
+ <p align="center">Feito com muito 💙 por <a href="https://github.com/kayrsant">kayrsant</a></p>
