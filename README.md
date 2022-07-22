@@ -31,9 +31,9 @@
  <hr>
 
 
-## 📝 Aula 1
+<h2 id="aula1">📝 Aula 1</h1>
 
-<p id="aula1">Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa! </p>
+<p>Construção de uma aplicação do zero para consumir a API do IMDb (e alternativas pois a do IMDb caiu) e exibir os filmes mais populares, destacando seus pôsteres e visualizando sua classificação. Tudo isso sem usar nenhuma biblioteca externa! </p>
 <p align="center">
   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
 </p>
@@ -49,7 +49,7 @@
 
   <hr>
 
-## 📝 Aula 2
+<h1 id="aula2">📝 Aula 2</h2>
 
 <p id="aula2">Nesta segunda aula vamos criar um gerador de figurinhas explorando outras bibliotecas nativas do Java, para que possamos enviar por Whatsapp os nossos filmes preferidos!</p>
 
@@ -72,7 +72,7 @@
 
   <hr>
 
-## 📝 Aula 3
+<h2 id="aula3">📝 Aula 3</h2>
 
 <p id="aula3">Chegou o momento de pegarmos os filmes do IMDb e gerar figurinhas com os pôsteres, aproveitando para melhorar nosso código com as refatorações necessárias para torná-lo mais flexível e fácil de entender.</p>
 <p align="center">
